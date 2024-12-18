@@ -1,0 +1,140 @@
+/* Movies List Container */
+.movies-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.movies-list-container h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Movies Grid */
+.movies-grid {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Movie Item */
+.movie-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.movie-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie Poster */
+.movie-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Placeholder Poster */
+.movie-item img[src='/placeholder.jpg'] {
+  background-color: #eee;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Movie Info */
+.movie-info {
+  padding: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.movie-info strong {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.movie-info span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+/* Add a Gradient Overlay for Hover Effect */
+.movie-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.movie-item:hover::after {
+  opacity: 1;
+}
+
+/* Pagination Container */
+.pagination-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination-container button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-container button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.pagination-container button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Page Number */
+.page-number {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+/* Add subtle hover animation */
+.movie-item img {
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover img {
+  transform: scale(1.1);
+}

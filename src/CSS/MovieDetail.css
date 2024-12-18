@@ -1,0 +1,127 @@
+/* General container styling */
+.movie-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  /* Movie information styling */
+  .movie-info {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .movie-info p {
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+  
+  .movie-info strong {
+    color: #444;
+  }
+  
+  /* Action buttons and sections */
+  .movie-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .movie-actions button {
+    background-color: #28a745;
+  }
+  
+  .movie-actions button:hover {
+    background-color: #218838;
+  }
+  
+  /* Rating section */
+  .rating-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rating-button {
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .rating-button.selected {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .rating-button:hover {
+    background-color: #ffca2c;
+  }
+  
+  /* Comments section */
+  .comments-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  textarea {
+    width: 100%;
+    max-width: 700px;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Error and loading messages */
+  .error {
+    color: red;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .loading {
+    font-size: 18px;
+    color: #555;
+  }
+  

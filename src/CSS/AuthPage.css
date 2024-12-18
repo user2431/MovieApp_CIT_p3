@@ -1,0 +1,70 @@
+
+/* Style for the AuthPage container */
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Form container */
+.auth-form {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form input fields */
+.auth-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Form buttons */
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Toggle button */
+.auth-toggle-btn {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #007BFF;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.auth-toggle-btn:hover {
+  color: #0056b3;
+}
+
+/* Error message styling */
+.auth-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
